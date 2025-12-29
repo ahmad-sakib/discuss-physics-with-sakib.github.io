@@ -1,0 +1,68 @@
+title: Physics&Philosophy
+email: ahmadhasansakib7@gmail.com
+description: >-
+  Exploring Next-to-Leading Order (NLO) physics, Machine Learning, and the Philosophy of Science.
+
+# URL Settings
+baseurl: "" 
+url: "https://ahmad-sakib.github.io"
+
+# Author Settings
+author:
+  name: "AHMAD HASAN SAKIB"
+  email: "ahmadhasansakib7@example.com"
+
+# Build settings
+markdown: kramdown
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "default"
+
+# Enable search and breadcrumbs
+search: true
+breadcrumbs: true
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# Main navigation
+main:
+  - title: "Blog"
+    url: /blog/
+  - title: "About"
+    url: /about/
+  - title: "Resources"
+    url: /resources/
+
+# Exclude system files from the build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# ------------------------------------
+# MathJax & Content Settings
+# ------------------------------------
+kramdown:
+  math_engine: mathjax
+  input: GFM
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true 
+      # prevents math inside code blocks from breaking
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      mathjax: true        
+      author_profile: true 
+      layout: single

@@ -1,0 +1,115 @@
+---
+---
+
+@import "minimal-mistakes";
+
+/* =========================================
+   CUSTOM PROFESSIONAL LANDING PAGE STYLES
+   ========================================= */
+
+/* 1. Hero Section Container */
+.hero-section-container {
+  padding: 3em 0;
+  background-color: #fff; /* Light background for contrast against dark header */
+  border-bottom: 1px solid #eee;
+}
+
+/* The Grid Layout (Image Left, Text Right) */
+.hero-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  /* On mobile, stack them vertically */
+  @media (max-width: 800px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Image Styling */
+.hero-image-wrapper {
+  flex: 1;
+  max-width: 500px;
+  
+  img.hero-profile-img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  }
+}
+
+/* Text Styling */
+.hero-content {
+  flex: 1.2;
+
+  h1.hero-title {
+    font-size: 2.8em;
+    font-weight: 800;
+    color: #222;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  p.hero-text-intro {
+    font-size: 1.3em;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 35px;
+    font-family: serif; /* Gives it that academic feel */
+  }
+}
+
+/* Buttons Area */
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  
+  @media (max-width: 800px) {
+    justify-content: center;
+  }
+  
+  /* Overriding theme button margins for this section */
+  .btn { margin-right: 0; }
+}
+
+
+/* 2. Featured Dark Section (Mimicking the book section) */
+.featured-section-container.custom-dark-bg {
+  background-color: #1a1a1a; /* Dark background */
+  padding: 5em 0;
+  margin-top: 0; /* Remove default margins */
+}
+
+.featured-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  gap: 50px;
+
+  @media (max-width: 800px) {
+    flex-direction: column-reverse; /* Image on top on mobile */
+    text-align: center;
+  }
+}
+
+.featured-text-content { flex: 1.5; }
+.featured-media-wrapper { flex: 1; }
+
+img.featured-img-tilted {
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  transform: rotate(2deg); /* Slight artistic tilt */
+  border: 3px solid #fff;
+  max-width: 100%;
+  height: auto;
+}
