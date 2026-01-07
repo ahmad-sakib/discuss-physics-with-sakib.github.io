@@ -3,8 +3,8 @@ title: "Scientific Resources"
 layout: single
 permalink: /resources/
 header:
-  overlay_color: "#1a1a1a"
-  overlay_filter: "0.5"
+  overlay_color: "#000000"
+  overlay_filter: "1"
 excerpt: "Exploring the intersections of high-energy physics, AI, and philosophy."
 ---
 
