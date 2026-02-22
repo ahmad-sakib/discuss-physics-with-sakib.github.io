@@ -1,21 +1,21 @@
 @import "minimal-mistakes";
 
 /* =========================================
-   PERMANENT LIGHT LANDING PAGE STYLES
+   PERMANENT DARK LANDING PAGE STYLES
    ========================================= */
 
-/* 1. Global Background */
+/* 1. Global Background (Fixes white/light bars between sections) */
 body {
-  background-color: #fcfcfc; /* Clean off-white */
-  color: #333333; /* Soft dark grey for readability */
+  background-color: #3a2e41; /* Matches the featured section for a seamless look */
+  color: #e6e6e6;
   margin: 0;
 }
 
 /* 2. Hero Section Container */
 .hero-section-container {
-  padding: 4em 0;
-  background-color: #ffffff; /* Pure white */
-  border-bottom: 1px solid #eeeeee; 
+  padding: 3em 0;
+  background-color: #000000; /* Deep Black Background */
+  border-bottom: 1px solid #1f293a; 
 }
 
 /* The Grid Layout */
@@ -46,9 +46,9 @@ body {
 .hero-image-wrapper img.hero-profile-img {
   width: 100%;
   height: auto;
-  border-radius: 20px;
-  /* Dark subtle shadow for depth on light background */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); 
+  border-radius: 30px;
+  /* White glow shadow to pop against dark bg */
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1); 
 }
 
 /* Text Styling */
@@ -59,7 +59,7 @@ body {
 .hero-content h1.hero-title {
   font-size: 2.1em;
   font-weight: 800;
-  color: #111111; /* Strong black for headings */
+  color: #ffffff; 
   line-height: 1.1;
   margin-bottom: 25px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -67,7 +67,7 @@ body {
 
 .hero-content p.hero-text-intro {
   font-size: 1.3em;
-  color: #555555; /* Medium grey for intro text */
+  color: #d1d1d1; 
   line-height: 1.5;
   margin-bottom: 35px;
   font-family: serif; 
@@ -90,25 +90,24 @@ body {
   margin-right: 0;
 }
 
-/* Force "About Me" style buttons to be Dark Outline for Light Theme */
+/* Force "About Me" style buttons to be White Outline */
 .hero-buttons .btn:not(.btn--primary):not(.btn--inverse) {
-  color: #333333;
-  border: 1px solid #333333;
+  color: #ffffff;
+  border: 1px solid #ffffff;
   background-color: transparent;
 }
 
 .hero-buttons .btn:not(.btn--primary):not(.btn--inverse):hover {
-  background-color: #333333;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 
 /* 3. Featured Section */
 .featured-section-container.custom-dark-bg {
-  background-color: #f7f9fc; /* Very light blue-grey section break */
+  background-color: #010a18; /* Deep Dark Blue/Black */
   padding: 5em 0;
   margin-top: 0;
-  border-top: 1px solid #eaeaea;
 }
 
 .featured-grid {
@@ -123,7 +122,7 @@ body {
 
 @media (max-width: 800px) {
   .featured-grid {
-    flex-direction: column-reverse;
+    flex-direction: column-reverse; /* Keeps text above image on mobile if image is first in HTML */
     text-align: center;
   }
 }
@@ -136,20 +135,20 @@ body {
   flex: 1;
 }
 
-/* Ensure Headings inside featured section are dark */
+/* Ensure Headings inside featured section are light */
 .featured-text-content h2, 
 .featured-text-content h3 {
-  color: #2f9c69 !important;
+  color: #ffffff !important;
 }
 
 .featured-text-content p {
-  color: #444444 !important;
+  color: #cccccc !important;
 }
 
 img.featured-img-tilted {
-  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
   transform: rotate(2deg);
-  border: 4px solid #9b0e0e; /* White border looks like a polaroid on light grey */
+  border: 3px solid #ffffff;
   max-width: 100%;
   height: auto;
-}
+}, re write the css file. i want a light theme . little bit more light color
