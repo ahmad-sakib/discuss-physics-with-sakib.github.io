@@ -4,12 +4,12 @@ title: About Me
 permalink: /about/
 ---
 
-Hello! I am **Ahmad Hasan Sakib**, a physicist and software engineer interested in the intersection of high-energy physics and AI.
+Hello! I am **Ahmad Hasan Sakib**, a physics student interested in the intersection of physics and AI.
 
 ### Research Interests
-* **Next-to-Leading Order (NLO)** calculations in Quantum Chromodynamics.
+* **Nonlinear Optics (NLO)** .
 * **Machine Learning** applications in high-energy particle collision analysis.
-* **Philosophy of Science**, specifically regarding model interpretability.
+* **Philosophy of Science**
 
 ### Contact
 You can find my open-source work on GitHub or contact me via email.
